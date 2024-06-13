@@ -99,3 +99,8 @@
 		> php artisan serve
 	> Browser
 		> localhost:8000
+## Após clone
+- **
+	> composer update
+	> npm install
+	> php artisan key:generate
