@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class RenderingComponentController extends Controller
+class PassingExempleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('renderingComponentView');
+        return view('RV_PassingExemple');
     }
 
     /**

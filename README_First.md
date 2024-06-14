@@ -106,7 +106,10 @@
 	> php artisan key:generate
 ## Criando Component
 - **
-	
+	Criar a aplicação no sentido contrario ao seu uso
+	> php artisan make:component   Exemple 
+
+
 	> php artisan make:controller           ComponentController --resource
 	> php artisan make:view                 ComponentView
 

@@ -1,12 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PackageController;
+
 use App\Http\Controllers\ProfileController;
+
 use App\Http\Controllers\ComponentController;
-use App\Http\Controllers\PackageComponentController;
-use App\Http\Controllers\RenderingComponentController;
+
+use App\Http\Controllers\RenderingController;
 use App\Http\Controllers\RenderingExempleController;
-use App\Http\Controllers\PassingDataToComponentController;
+
+use App\Http\Controllers\PassingController;
+use App\Http\Controllers\PassingExempleController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +24,15 @@ use App\Http\Controllers\PassingDataToComponentController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/packageComponent', [PackageController::class, 'index'])->name('packageComponent.index');
 
-Route::get('/componentView_index'         , [         ComponentController::class , 'index'])->name(         'componentView.index');
-Route::get('/renderingComponentView_index', [RenderingComponentController::class , 'index'])->name('renderingComponentView.index');
-Route::get('/RV_Rendering_index'          , [RenderingExempleController::class   , 'index'])->name('RV_Rendering.index');
+Route::get('/RV_Component_index'       , [ComponentController::class       , 'index'])->name('RV_Component.index');
+Route::get('/RV_Rendering_index'       , [RenderingController::class       , 'index'])->name('RV_Rendering.index');
+Route::get('/RV_RenderingExemple_index', [RenderingExempleController::class, 'index'])->name('RV_RenderingExemple.index');
 //---
-Route::get('/passingDataToComponent', [PassingDataToComponentController::class, 'index'])->name('passingDataToComponent.index');
-Route::get('/packageComponent', [PackageComponentController::class, 'index'])->name('packageComponent.index');
+Route::get('/RV_Passing_index'         , [PassingController::class         , 'index'])->name('RV_Passing.index');
+Route::get('/RV_PassingExemple_index'  , [PassingExempleController::class  , 'index'])->name('RV_PassingExemple.index');
+
 //---
 
 Route::get('/', function () {

@@ -11,7 +11,7 @@ class RenderingExempleController extends Controller
      */
     public function index()
     {
-        return view('RV_Rendering');
+        return view('RV_RenderingExemple');
     }
 
     /**
