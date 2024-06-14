@@ -107,25 +107,10 @@
 ## Criando Component
 - **
 	Criar a aplicação no sentido contrario ao seu uso
-	> php artisan make:component   Exemple 
-
-
-	> php artisan make:controller           ComponentController --resource
-	> php artisan make:view                 ComponentView
-
-	> php artisan make:controller  RenderingComponentController --resource
-	> php artisan make:view        RenderingComponentView
-
-	> php artisan make:controller  RenderingComponentExempleController --resource
-	> php artisan make:view        RenderingComponentViewExemple	
-	> php artisan make:component   Exemple 
-	> php artisan make:view        RenderingExemple	
-	
-
-	> php artisan make:controller PassingDataToComponentController --resource
-	> php artisan make:view       PassingDataToComponentView
-	> php artisan make:view       PassingDataToComponentViewExemple
-	> php artisan make:component  PassingDataToComponentExemple
-	Editar a Rota
-		use App\Http\Controllers\PassingDataToComponentController;
-		Route::get('/passingDataToComponent', [PassingDataToComponentController::class, 'index'])->name('passingDataToComponent.index');
+	> php artisan make:component <AVCnome>  
+		Path:	app/View/Components 
+				resources/views/components
+	> php artisan make:view  <RV_nome>
+		Path:	resources/views
+	> php artisan make:controller <NomeController> --resource
+		Path:	app/Http/Controllers
