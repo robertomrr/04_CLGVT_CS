@@ -21,7 +21,6 @@
     <div class="container mx-auto">
         <h1 class="text-lg"><strong>Estudando Passing Data To Component</strong></h1>
 
-
     </div>     
 </body>
 </html>

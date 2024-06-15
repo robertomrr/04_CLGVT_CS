@@ -21,6 +21,9 @@
         <p>Abaixo desta linha esta o componente x-AVCPassing.</p>
         <hr><hr><hr>
     </div>
-    <x-AVCPassing/>
+    <?php 
+    $message ='Sou a mensagem que deve ser exibida pelo component AVCPasssing';
+    ?>
+    <x-AVCPassing type="error" :message="$message"/>
 </body>
 </html>
