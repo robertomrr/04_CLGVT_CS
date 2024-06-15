@@ -17,7 +17,7 @@
                     <a href="{{ route('RV_Passing.index')}}"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Passing Data to Components</button></a>
                     <a href="#"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Component Attributes</button></a>
                     <a href="#"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Reserved Keywords</button></a>
-                    <a href="#"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Slots</button></a>
+                    <a href="{{ route('RV_Slot.index') }} "><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Slots</button></a>
                     <a href="{{ route('packageComponent.index')}}"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Package</button></a>
                 </div>
             </div>
